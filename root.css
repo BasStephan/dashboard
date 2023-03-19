@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root{
+    --bg-color: #10121C;
+    --bg-light-color: #1F2640;
+    --primary-color: #3CF7DC;
+    --secondary-color: #10121C;
+    --secondary-ligt: #F0E9D2;
+
+    --search-bar-height: 75px;
+    --number-height: 125px;
+    --order-height: 300px;
+    --chart-height: 500px;
+    --font-size: 16px;    
+}

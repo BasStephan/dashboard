@@ -1,0 +1,36 @@
+@import url(root.css);
+
+header{
+    width: 200px;
+    float: left;
+    height: 100vh;
+    background-color: var(--primary-color);
+    position: relative;
+}
+.header{
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+nav li{
+    width: 200px;
+    line-height: 3rem;
+    text-align: left;
+}
+
+nav li a{
+    padding: 15px 25px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    border-radius: 0 25px 25px  0;
+    position: relative;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+
+}
