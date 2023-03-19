@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="">Logo</a></div>
+            <nav>
+                <ul>
+                    <li><a href=""><span>Dashboard</span></a></li>
+                    <li><a href=""><span>Dashboard</span></a></li>
+                    <li><a href=""><span>Dashboard</span></a></li>
+                    <li><a href=""><span>Dashboard</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar-container"><input type="text" class="search-bar"></div>
+        <div class="number-container grid grid-4 padding">
+            <div class="card">
+                <div class="number-text">
+                    <span>1500</span>
+                    <span>Bezoekers</span>
+                </div>
+                <img src="" alt="" class="icons">
+            </div>
+            <div class="card">
+                <div class="number-text">
+                    <span>33</span>
+                    <span>Verkocht</span>
+                </div>
+                <img src="" alt="" class="icons">
+            </div>
+            <div class="card">
+                <div class="number-text">
+                    <span>312</span>
+                    <span>Gesprekken</span>
+                </div>
+                <img src="" alt="" class="icons">
+            </div>
+            <div class="card">
+                <div class="number-text">
+                    <span>€4999</span>
+                    <span>Verdient</span>
+                </div>
+                <img src="" alt="" class="icons">
+            </div>
+        </div>
+        <div class="chart-container d-flex items-3-7 padding">
+            <div class="card">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="card">
+                <canvas id="lineChart"></canvas>
+            </div>
+            
+            
+        </div>
+        <div class="order-container d-flex items-7-3 padding">
+            <div class="card">
+
+            </div>
+            <div class="card">
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
