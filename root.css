@@ -7,6 +7,9 @@
     --secondary-color: #10121C;
     --secondary-ligt: #F0E9D2;
 
+    --filter-primary: invert(76%) sepia(51%) saturate(534%) hue-rotate(114deg) brightness(99%) contrast(99%);
+    --filter-secondary: invert(5%) sepia(42%) saturate(600%) hue-rotate(193deg) brightness(99%) contrast(96%);
+
     --search-bar-height: 75px;
     --number-height: 125px;
     --order-height: 300px;

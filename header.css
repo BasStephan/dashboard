@@ -14,6 +14,18 @@ header{
     background-color: var(--primary-color);
 }
 
+/* Logo */
+
+.logo{
+    margin: 25px;
+
+}
+.logo a{
+    text-decoration: none;
+}
+
+/* Menu */
+
 nav li{
     width: 200px;
     line-height: 3rem;
@@ -21,7 +33,7 @@ nav li{
 }
 
 nav li a{
-    padding: 15px 25px;
+    padding: 15px 25px 15px 40px;
     color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
     border-radius: 0 25px 25px  0;
@@ -32,5 +44,39 @@ nav li a{
 nav li a:hover{
     background-color: var(--secondary-color);
     color: var(--primary-color);
+}
 
+nav li a:after{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    filter: var(--filter-secondary);
+    animation: all 0.3s ease-in-out;
+}
+
+nav li:hover a:hover::after{
+    filter: var(--filter-primary);
+}
+
+nav li:nth-child(1) a::after{
+    background-image: url(image/chart_icon.svg);
+}
+nav li:nth-child(2) a::after{
+    background-image: url(image/customer_icon.svg);
+}
+nav li:nth-child(3) a::after{
+    background-image: url(image/message_icon.svg);
+}
+nav li:nth-child(4) a::after{
+    background-image: url(image/settings_icon.svg);
+}
+nav li:nth-child(5) a::after{
+    background-image: url(image/log_out_icon.svg);
+    filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
 }
