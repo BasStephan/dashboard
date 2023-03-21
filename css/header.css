@@ -65,18 +65,18 @@ nav li:hover a:hover::after{
 }
 
 nav li:nth-child(1) a::after{
-    background-image: url(image/chart_icon.svg);
+    background-image: url(../image/header/chart_icon.svg);
 }
 nav li:nth-child(2) a::after{
-    background-image: url(image/customer_icon.svg);
+    background-image: url(../image/header/customer_icon.svg);
 }
 nav li:nth-child(3) a::after{
-    background-image: url(image/message_icon.svg);
+    background-image: url(../image/header/message_icon.svg);
 }
 nav li:nth-child(4) a::after{
-    background-image: url(image/settings_icon.svg);
+    background-image: url(../image/header/settings_icon.svg);
 }
 nav li:nth-child(5) a::after{
-    background-image: url(image/log_out_icon.svg);
+    background-image: url(../image/header/log_out_icon.svg);
     filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
 }

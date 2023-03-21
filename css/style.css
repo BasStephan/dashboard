@@ -1,5 +1,6 @@
 @import url(root.css);
 @import url(header.css);
+@import url(companentens/icons.css);
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +14,6 @@ body{
     background-color: var(--bg-color);
     color: var(--primary-color);
 }
-
 
 main{
     height: 400px;
@@ -36,7 +36,6 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
-
 
 .card{
     background-color: var(--bg-light-color);
@@ -68,9 +67,6 @@ main{
 
 /* font */
 
-
-
-
 /* search bar */
 .search-bar{
     width: 400px;
@@ -85,35 +81,42 @@ main{
     align-items: center;
 }
 
+.search-bar-box{
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
 input{
     line-height: 1rem;
     font-size: var(--font-size);
     background-color: var(--primary-color);
     border: 0px;
     color: var(--secondary-color);
-    padding: 6px;
+    padding: 6px 10px 6px 35px;
     font-weight: 600;
     border-radius: 10px;
+    position: relative;
 }
 
-input:focus-visible{
-    
+.search-bar-box::after{
+    background-image: url(../image/search_icon.svg);
 }
 
 /* cards */
 .chart-container .card{
-    height: 
-    var(--chart-height);
+    height: var(--chart-height);
 }
 
 .number-container .card{
     height: var(--number-height);
+    display: flex;
 }
 
 .order-container .card{
     height: var(--order-height);
 }
-
 
 /* number */
 
@@ -127,6 +130,15 @@ input:focus-visible{
 .number-container span:last-child{
     font-size: calc(var(--font-size) * 1);
     line-height: 1rem;
+    color: var(--white-color);
     display: block;
     margin: 0;
+}
+
+.number-container img{
+    margin: 0 0 0 auto;
+    max-height: 65px;
+    height: 100%;
+    max-width: 50px;;
+    filter: var(--filter-white);
 }

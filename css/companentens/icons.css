@@ -1,0 +1,11 @@
+.icon::after{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+}
