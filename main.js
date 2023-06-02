@@ -10,6 +10,7 @@ function createChart(id, type){
         datasets: [{
         label: '# of Votes',
         data: [12, 19, 3, 5, 2, 3],
+        color: '#000'
         }]
     },
     options: {
@@ -17,7 +18,9 @@ function createChart(id, type){
         plugins: {
             legend: true,
             tooltip: true,
-            borderColor: '#000'
+            colors: {
+              forceOverride: true
+            }
         },
         animation: {
             onComplete: () => {

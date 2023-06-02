@@ -1,6 +1,10 @@
 @import url(root.css);
 @import url(header.css);
+@import url(companentens/btn.css);
 @import url(companentens/icons.css);
+
+@import url(companentens/font.css);
+
 *{
     padding: 0;
     margin: 0;
@@ -16,7 +20,8 @@ body{
 }
 
 main{
-    height: 400px;
+    width: calc(100% - 200px);
+    margin-left: 200px;
 }
 
 .padding{
@@ -57,12 +62,25 @@ main{
     width: 70%;
 }
 
-.items-7-3 .card:first-child{
-    width: 70%;
+.items-6-4 .card:first-child{
+    width: 60%;
     margin-right: 30px;
 }
-.items-7-3 .card:first-child{
-    width: 30%;
+.items-6-4 .card:last-child{
+    width: 40%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.line-bar{
+    display: inline-block;
+    width: 100%;
 }
 
 /* font */
@@ -114,7 +132,7 @@ input{
     display: flex;
 }
 
-.order-container .card{
+.recent-container .card{
     height: var(--order-height);
 }
 
@@ -141,4 +159,40 @@ input{
     height: 100%;
     max-width: 50px;;
     filter: var(--filter-white);
+}
+
+/* recent */
+
+.recent-container .card:last-child{
+    overflow: hidden;
+}
+
+.person-container{
+    overflow: hidden;
+}
+
+.person-box{
+    display: flex;
+    height: 70px;
+}
+
+.person-box .person-img span{
+    display: block;
+    width: 50px;
+    height: 50px;   
+    border-radius: 50%;
+    background-color: red;
+    margin: 15px;
+}
+
+.person-box .person-content span{
+    display: block;
+    height: 20px;
+    margin-top: 20px;
+}
+.person-box .person-content span:first-child{
+    font-weight: 600;
+}
+.person-box .person-content span:last-child{
+    margin-top: 5px;
 }
